@@ -5,72 +5,131 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VivaLume</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <header class="header-lume">
-        <a href="#">VivaLume</a>
+        <a class="header-lume__logo" href="#">VivaLume</a>
         <nav>
             <ul class="header-lume__menu menu--disable">
                 <li><a href="#">Recursos</a></li>
                 <li><a href="#">Programas</a></li>
                 <li><a href="#">Comunidade</a></li>
                 <li><a href="#">Depoimentos</a></li>
-                <li class="icon--disable "><a href="#"></a></li>
             </ul>
+            <div class="header-lume__icon">
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" class="lucide lucide-menu-icon lucide-menu icon--active ">
+                        <path d="M4 5h16" />
+                        <path d="M4 12h16" />
+                        <path d="M4 19h16" />
+                    </svg></a>
+            </div>
         </nav>
-        <a href="#">Contato</a>
+        <a class="btn--disable" href="#">Contato</a>
     </header>
 
     <main class="main-lume">
 
         <section class="lume-hero">
-            <h1 class="lume-hero__title">Sinta-se bem todos os dias com o bem-estar.</h1>
+            <h1 class="lume-hero__title">Bem-estar todos os dias, do seu jeito</h1>
         </section>
 
         <section class="lume-introduction">
-            <div class="lume-introduction__icon"></div>
+            <div class="lume-introduction__icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-sparkle-icon lucide-sparkle">
+                    <path
+                        d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-sparkle-icon lucide-sparkle">
+                    <path
+                        d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-sparkle-icon lucide-sparkle">
+                    <path
+                        d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z" />
+                </svg>
+            </div>
             <div class="lume-introduction__text">
                 <p>Acreditamos que o bem-estar <mark class="mark--blue">não</mark> é sobre <mark
                         class="mark--green">perfeição</mark> — é sobre pequenos e belos momentos de <mark
                         class="mark--purple">cuidado</mark> que preenchem sua <mark class="mark--pink">vida</mark> com
                     calor e <mark class="mark--yellow">cor</mark>.</p>
 
-                <a class=" lume-introduction__btn" href="#">Começar minha jornada de bem-estar</a>
+                <a class="lume-introduction__btn" href="#">Comece sua jornada de bem-estar</a>
             </div>
         </section>
 
         <section class="lume-resources">
-            <div class="lume-resources__text">
-                <h2>Uma plataforma. Infinitas formas de se sentir melhor</h2>
-                <a href="#">Explore a experiência</a>
-            </div>
+                <h2 class="lume-resources__title">Infinitas formas de se sentir melhor</h2>
             <div class="lume-resources__card">
                 <article class="resources-card">
                     <div class="resources-card__icon">
-
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-leaf-icon lucide-leaf">
+                            <path
+                                d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z" />
+                            <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12" />
+                        </svg>
                     </div>
                     <h3>Mente & Humor</h3>
                     <p>Meditação, diário e reflexões diárias</p>
                 </article>
                 <article class="resources-card">
                     <div class="resources-card__icon">
-
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-battery-charging-icon lucide-battery-charging">
+                            <path d="m11 7-3 5h4l-3 5" />
+                            <path d="M14.856 6H16a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-2.935" />
+                            <path d="M22 14v-4" />
+                            <path d="M5.14 18H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h2.936" />
+                        </svg>
                     </div>
                     <h3>Corpo & Energia</h3>
                     <p>Movimentos leves e exercícios restauradores</p>
                 </article>
                 <article class="resources-card">
                     <div class="resources-card__icon">
-
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-bubbles-icon lucide-bubbles">
+                            <path d="M7.001 15.085A1.5 1.5 0 0 1 9 16.5" />
+                            <circle cx="18.5" cy="8.5" r="3.5" />
+                            <circle cx="7.5" cy="16.5" r="5.5" />
+                            <circle cx="7.5" cy="4.5" r="2.5" />
+                        </svg>
                     </div>
                     <h3>Foco & Fluidez</h3>
                     <p>Ferramentas para ajudar você a se manter presente</p>
                 </article>
                 <article class="resources-card">
                     <div class="resources-card__icon">
-
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-earth-icon lucide-earth">
+                            <path d="M21.54 15H17a2 2 0 0 0-2 2v4.54" />
+                            <path
+                                d="M7 3.34V5a3 3 0 0 0 3 3a2 2 0 0 1 2 2c0 1.1.9 2 2 2a2 2 0 0 0 2-2c0-1.1.9-2 2-2h3.17" />
+                            <path d="M11 21.95V18a2 2 0 0 0-2-2a2 2 0 0 1-2-2v-1a2 2 0 0 0-2-2H2.05" />
+                            <circle cx="12" cy="12" r="10" />
+                        </svg>
                     </div>
                     <h3>Comunidade & Suporte</h3>
                     <p>Conecte-se com outras pessoas na sua jornada</p>
@@ -78,32 +137,56 @@
             </div>
         </section>
         <section class="lume-statistic">
-            <div class="lume-statistic__img">
-                <img src="" alt="">
+            <div class="lume-statistic__icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-sparkle-icon lucide-sparkle">
+                    <path
+                        d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-sparkle-icon lucide-sparkle">
+                    <path
+                        d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-sparkle-icon lucide-sparkle">
+                    <path
+                        d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z" />
+                </svg>
             </div>
+            <div class="lume-statistic__img">
+                <img src="img/statistic.jpg" alt="garota de bicicleta ao ar livre">
+            </div>
+            <div class="lume-statistic__card">
             <div class="lume-statistic__line"></div>
             <article class="lume-statistic__info">
+
                 <span>90%</span>
-                <p>relatam mais calma em até 2 semanas</p>
+                <p>Relatam mais calma em até 2 semanas</p>
             </article>
             <div class="lume-statistic__line"></div>
             <article class="lume-statistic__info">
                 <span>87%</span>
-                <p>melhor qualidade de sono</p>
+                <p>Melhor qualidade de sono</p>
             </article>
             <div class="lume-statistic__line"></div>
             <article class="lume-statistic__info">
                 <span>94%</span>
-                <p>se sentem melhor com a VivaLume</p>
+                <p>se sentem melhor com a <mark class="mark--green">VivaLume</mark></p>
             </article>
+            <div class="lume-statistic__line"></div>
+            </div>
         </section>
+
         <section class="lume-testimony">
             <h2>Depoimentos</h2>
-            <a href="#">Conheça a experiência VivaLume</a>
             <div class="lume-testimony__card">
                 <article class="testimony-card">
                     <div class="testimony-card__img">
-                        <img src="" alt="">
+                        <img src="img/depoimento1.jpg" alt="testemunha1">
                     </div>
                     <p>"Eu vivia ansiosa o tempo todo. Com a VivaLume, comecei a criar uma rotina leve e hoje me sinto
                         muito mais tranquila."</p>
@@ -111,22 +194,22 @@
                 </article>
                 <article class="testimony-card">
                     <div class="testimony-card__img">
-                        <img src="" alt="">
+                        <img src="img/depoimento2.jpg" alt="testemunha2">
                     </div>
                     <p>"O que mais me ajudou foi acompanhar meu humor. Parece simples, mas fez muita diferença no meu
                         dia a dia."</p>
-                    <span>— Marcos Vinícius, 34 anos</span>
+                    <span>— Isadora Oliveira, 34 anos</span>
                 </article>
                 <article class="testimony-card">
                     <div class="testimony-card__img">
-                        <img src="" alt="">
+                        <img src="img/depoimento3.jpg" alt="testemunha3">
                     </div>
                     <p>"Finalmente estou dormindo melhor. As sessões guiadas me ajudaram a desacelerar de verdade."</p>
                     <span>— Juliana Souza, 26 anos</span>
                 </article>
             </div>
         </section>
-        
+
     </main>
     <footer class="lume-footer">
         <div>
