@@ -25,7 +25,7 @@
                 <li><a href="#">Comunidade</a></li>
                 <li><a href="#">Depoimentos</a></li>
             </ul>
-            <div class="header-lume__icon">
+            <div class="header-lume__icon icon--disable">
                 <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round" class="lucide lucide-menu-icon lucide-menu icon--active ">
@@ -35,7 +35,7 @@
                     </svg></a>
             </div>
         </nav>
-        <a class="btn--disable" href="#">Contato</a>
+        <a class="header-lume__btn btn--disable" href="#">Contato</a>
     </header>
 
     <main class="main-lume">
@@ -76,7 +76,7 @@
         </section>
 
         <section class="lume-resources">
-                <h2 class="lume-resources__title">Infinitas formas de se sentir melhor</h2>
+            <h2 class="lume-resources__title">Infinitas formas de se sentir melhor</h2>
             <div class="lume-resources__card">
                 <article class="resources-card">
                     <div class="resources-card__icon">
@@ -161,28 +161,28 @@
                 <img src="img/statistic.jpg" alt="garota de bicicleta ao ar livre">
             </div>
             <div class="lume-statistic__card">
-            <div class="lume-statistic__line"></div>
-            <article class="lume-statistic__info">
+                <div class="lume-statistic__line"></div>
+                <article class="lume-statistic__info">
 
-                <span>90%</span>
-                <p>Relatam mais calma em até 2 semanas</p>
-            </article>
-            <div class="lume-statistic__line"></div>
-            <article class="lume-statistic__info">
-                <span>87%</span>
-                <p>Melhor qualidade de sono</p>
-            </article>
-            <div class="lume-statistic__line"></div>
-            <article class="lume-statistic__info">
-                <span>94%</span>
-                <p>se sentem melhor com a <mark class="mark--green">VivaLume</mark></p>
-            </article>
-            <div class="lume-statistic__line"></div>
+                    <span>90%</span>
+                    <p>Relatam mais calma em até 2 semanas</p>
+                </article>
+                <div class="lume-statistic__line"></div>
+                <article class="lume-statistic__info">
+                    <span>87%</span>
+                    <p>Melhor qualidade de sono</p>
+                </article>
+                <div class="lume-statistic__line"></div>
+                <article class="lume-statistic__info">
+                    <span>94%</span>
+                    <p>se sentem melhor com a <mark class="mark--green">VivaLume</mark></p>
+                </article>
+                <div class="lume-statistic__line"></div>
             </div>
         </section>
 
         <section class="lume-testimony">
-                <div class="lume-testimony__icon">
+            <div class="lume-testimony__icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                     class="lucide lucide-sparkle-icon lucide-sparkle">
@@ -231,18 +231,19 @@
 
     </main>
     <footer class="lume-footer">
-        <div>
-            <h4>VivaLume</h4>
-            <p>Seu espaço de bem-estar, leveza e equilíbrio todos os dias.</p>
-        </div>
+
         <div class="lume-footer__email">
-            <label for="email" class="">Seja o primeiro a saber</label>
-            <input type="email" id="email" placeholder="Digite seu e-mail">
-            <button type="submit">Receber novidades</button>
+            <h4 class="lume-email__title">Receba novidades</h4>
+            <form class="lume-footer__form">
+                <label for="email" class="">Seja o primeiro a saber</label>
+                <input type="email" id="email" placeholder="Digite seu e-mail">
+                <button type="submit">Receber novidades</button>
+            </form>
         </div>
         <div class="lume-footer__support">
+            <h4 class="lume-support__title">Atendimento</h4>
             <nav>
-                <ul>
+                <ul class="lume-support__ul">
                     <li><a href="#">Central de ajuda</a></li>
                     <li><a href="#">Fale conosco</a></li>
                     <li><a href="#">Termos de uso</a></li>
@@ -251,8 +252,9 @@
             </nav>
         </div>
         <div class="lume-footer__social">
+            <h4 class="lume-social__title">Redes sociais</h4>
             <nav>
-                <ul>
+                <ul class="lume-social__ul">
                     <li><a href="#">Instagram</a></li>
                     <li><a href="#">Facebook</a></li>
                     <li><a href="#">LinkedIn</a></li>

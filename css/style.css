@@ -13,7 +13,7 @@
     --mark-yellow: rgb(255, 255, 96);
     --primary-color: rgb(63, 139, 63);
     --secondary-color: rgb(83, 78, 78);
-
+    --time: 0.3s;
 }
 
 html {
@@ -27,13 +27,20 @@ body {
     background-color: #fdf6eb;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+}
 
+/*===== 
+HEADER 
+======*/
 
 .header-lume {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: .5rem 1rem;
+    padding: 0 1rem;
     background-color: #fff;
 }
 
@@ -52,13 +59,13 @@ body {
     display: none;
 }
 
-.icon--active {
-    display: inline;
-}
-
 .lucide {
     color: var(--primary-color);
 }
+
+/*====
+ HERO 
+ =====*/
 
 .lume-hero {
     background-image: url(../img/hero.jpg);
@@ -74,6 +81,10 @@ body {
     font-size: 2rem;
     color: rgb(83, 78, 78);
 }
+
+/*========== 
+INTRODUCTION 
+============*/
 
 .lume-introduction {
     display: flex;
@@ -101,7 +112,7 @@ body {
     font-size: 1.3rem;
     font-weight: 400;
     line-height: 1.5;
-    margin: 0 0 2rem 0;
+    margin-bottom: 2rem;
 }
 
 .mark--blue {
@@ -130,7 +141,7 @@ body {
     font-size: 1.1rem;
     color: var(--secondary-color);
     white-space: nowrap;
-    margin: 0 1rem 0 0;
+    margin-right: 1rem;
     gap: .3rem;
 
 
@@ -140,6 +151,10 @@ body {
     content: "➞";
 
 }
+
+/*========
+ RESOURCES 
+ =========*/
 
 .lume-resources {
     padding: 2rem .5rem;
@@ -155,7 +170,6 @@ body {
 .lume-resources__card {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: ;
 }
 
 .resources-card__icon {
@@ -191,6 +205,10 @@ body {
     font-size: 1.1rem;
 }
 
+/*====== 
+STATISTIC 
+=======*/
+
 .lume-statistic {
     margin: 0 .5rem;
     display: flex;
@@ -207,17 +225,15 @@ body {
 .lume-statistic__img {
     padding: 1rem 0;
     overflow: hidden;
-   
+
 }
 
-.lume-statistic__img img{
+.lume-statistic__img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    
+
 }
-
-
 
 .lume-statistic__line {
     border-top: 1px dashed black;
@@ -238,54 +254,325 @@ body {
     font-weight: 500;
 }
 
+/*=========
+ Testimony 
+ ==========*/
 
-
-.lume-testimony__icon{
+.lume-testimony__icon {
     text-align: center;
     margin: 2rem 0;
 }
 
-.lume-testimony__title{
+.lume-testimony__title {
     text-align: center;
     font-size: 2rem;
 }
 
-.lume-testimony__card{
+.lume-testimony__card {
     display: grid;
     padding: 1rem 0.5rem;
     gap: 1rem;
-  
+
 }
 
-.testimony-card{
+.testimony-card {
     background-color: snow;
-    box-shadow: 0 0 1px 1px  rgb(158, 158, 158);
+    border: 1px solid gray;
     text-align: center;
     padding-bottom: 2rem;
-    
+
 }
 
-.testimony-card__img{
-  aspect-ratio: 6 / 6;
-  overflow: hidden;
+.testimony-card__img {
+    aspect-ratio: 6 / 6;
+    overflow: hidden;
 }
 
-.testimony-card__img img{
+.testimony-card__img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.testimony-card p, .testimony-card span{
+.testimony-card p,
+.testimony-card span {
     font-size: 1.1rem;
     padding: .5rem;
 }
 
+/*===== 
+FOOTER
+======*/
+
+.lume-footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr) 5rem;
+    gap: .5rem;
+    padding: 1rem;
+    background-color: black;
+    color: var(--primary-color);
+
+}
+
+.lume-footer__email {
+    grid-column: 1 / 3;
+}
+
+.lume-email__title {
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.lume-footer__form {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.lume-footer__form label {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+input[type="email"] {
+    padding: .5rem;
+    outline: 1px solid var(--secondary-color);
+}
+
+input[type="email"]::placeholder {
+    color: var(--secondary-color);
+}
+
+input[type="email"]:focus::placeholder {
+    color: transparent;
+}
+
+.lume-footer__form button {
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    color: var(--primary-color);
+    padding: .5rem;
+}
+
+.lume-footer__support {
+    grid-column: 1 / 2;
+    grid-row: 2;
+}
+
+.lume-support__title, .lume-social__title {
+    font-size: 1.1rem;
+    
+}
+
+.lume-support__ul,
+.lume-social__ul {
+    padding: 0;
+}
+
+.lume-support__ul li,
+.lume-social__ul li {
+    list-style-type: none;
+    padding: .3rem 0;
+}
+
+.lume-support__ul a,
+.lume-social__ul a {
+    text-decoration: none;
+    color: snow;
+    font-size: 1rem;
+}
 
 
-img{
-    display: block;
-    
-    max-width: 100%;
-    
+.lume-footer__social {
+    grid-column: 2 / 3;
+    grid-row: 2;
+    text-align: right;
+}
+
+
+.lume-footer__autoral {
+    grid-column: 1 / 3;
+    grid-row: 3;
+    text-align: center;
+    padding-top: 1.2rem;
+    font-size: .8rem;
+}
+
+/*==================
+ RESPONSIVIDADE 64EM 
+ ===================*/
+
+@media screen and (min-width: 64em) {
+
+
+
+    .header-lume {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        padding-right: 0;
+    }
+
+    .header-lume__logo {
+        margin-right: auto;
+    }
+
+    .header-lume__logo:hover {
+        color: color-mix(in srgb, var(--primary-color), white 40%);
+    }
+
+    .menu--disable,
+    .btn--disable {
+        display: flex;
+    }
+
+
+    .header-lume__menu {
+        list-style-type: none;
+        gap: 1em;
+        padding-right: 1.5em;
+
+    }
+
+    .header-lume__menu a {
+        text-decoration: none;
+        font-size: 1em;
+        font-weight: 700;
+        letter-spacing: .1em;
+        color: var(--secondary-color);
+        padding-bottom: .3em;
+    }
+
+    .header-lume__menu a:hover {
+        color: color-mix(in srgb, var(--secondary-color), white 40%);
+        border-bottom: 2px solid var(--primary-color);
+    }
+
+    .header-lume__btn {
+        display: inline-block;
+        background-color: black;
+        padding: 1em 2em;
+
+        text-decoration: none;
+        font-size: 1em;
+        font-weight: 700;
+        letter-spacing: .1em;
+        color: var(--primary-color);
+
+        transition: background-color var(--time) ease-out, color var(--time) ease-out;
+    }
+
+    .header-lume__btn:hover {
+        color: #fff;
+        background-color: var(--primary-color);
+    }
+
+
+    .icon--disable {
+        display: none;
+    }
+
+
+    .lume-hero__title {
+        align-content: end;
+        width: 20CH;
+    }
+
+    .lume-introduction__text p {
+        width: 30ch;
+        font-size: 1.5em;
+    }
+
+    .lume-introduction__btn {
+        font-size: 1.3em;
+    }
+
+    .lume-introduction__btn:hover {
+        color: var(--primary-color);
+    }
+
+    .lume-introduction__btn::before {
+        transition: tranform var(--time) ease;
+    }
+
+    .lume-introduction__btn:hover::before {
+        transform: translateX(1px);
+    }
+
+    .lume-resources__card {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .lume-statistic{
+        display: grid;
+        grid-template-columns: repeat(2, 31.25em);
+        grid-template-rows: 5em 31.25em;
+        padding: .5em 2em;
+    }
+    .lume-statistic__icon{
+        grid-column: 1 / 3;
+        grid-row: 1;
+    }
+
+    .lume-statistic__img {
+        grid-column: 1 / 2;
+        grid-row: 2;
+       
+    }
+
+    .lume-statistic__card{
+        grid-column: 2 / 3;
+        grid-row: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: .6em;
+        padding-top: 1em;
+
+    }    
+
+    .lume-testimony__card{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .lume-footer{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr 5em;
+        text-align: center;
+    }
+
+    .lume-footer__email{
+        grid-column: 1 / 2;
+        grid-row: 1;
+    }
+
+    .lume-email__title, 
+    .lume-support__title, 
+    .lume-social__title{
+        font-size: 1.1em;
+        margin: 1em;
+        letter-spacing: .1em;
+    }
+
+    .lume-footer__form label{
+        font-size: 1em;
+    }
+
+    .lume-footer__support{
+        grid-column: 2 / 3;
+        grid-row: 1;
+    }
+
+    .lume-footer__social {
+        grid-column: 3 / 4;
+        grid-row: 1;
+        text-align: center;
+    }
+    .lume-footer__autoral{
+        grid-column: 1 / 4;
+        grid-row: 2;
+    }
 }
