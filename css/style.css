@@ -509,7 +509,7 @@ input[type="email"]:focus::placeholder {
 
     .lume-statistic {
         display: grid;
-        grid-template-columns: repeat(2, 31.25em);
+        grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 5em 31.25em;
         padding: .5em 2em;
        
